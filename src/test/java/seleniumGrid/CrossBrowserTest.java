@@ -17,7 +17,7 @@ public class CrossBrowserTest {
 	@Parameters({"bname"})
 	
 	@Test
-	public void browserTest(String bname) throws MalformedURLException, InterruptedException
+	public void browserTest(String bname) throws MalformedURLException
 	{
 		
 		
@@ -48,16 +48,17 @@ public class CrossBrowserTest {
 			
 		}
 		
-		Thread.sleep(5000);
-		d.get("https://www.amazon.in/");
+		//Thread.sleep(5000);
+		d.get("https://www.amazon.com");
 		System.out.println("Title is :" + d.getTitle());
-		Thread.sleep(10000);
+		//Thread.sleep(10000);
 		Reporter.log("Test execution for Amazon application", true);
 
-		//d.quit();
+		d.quit();
 		Reporter.log("Test execution on chrome completed", true);
-		//Reporter.log("Test execution on edge completed", true);
-		//Reporter.log("Test execution on firefox completed", true);
+		Reporter.log("Test execution on edge completed", true);
+		Reporter.log("Test execution on firefox completed", true);
+		
 		
 	}
 

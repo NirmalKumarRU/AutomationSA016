@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.CRM.TestCases.HomePageTest">
+      <class name="seleniumGrid.GridTest">
         <methods>
-          <include name="setUp"/>
-          <include name="pageSetUp"/>
-          <include name="verifySignIn"/>
+          <include name="testChrome"/>
         </methods>
-      </class> <!-- com.CRM.TestCases.HomePageTest -->
+      </class> <!-- seleniumGrid.GridTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
